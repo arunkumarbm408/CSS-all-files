@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        div{
+            height: 600px;
+            width: 400px;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+        }
+        #test{
+            height: 200px;
+            width: 200px;background-color: aqua;
+            position: absolute;
+            left: 10px;
+            top: 0px;
+            
+            z-index: 201;
+            
+
+        }
+        #test1{
+            height: 200px;
+            width: 200px;background-color: rgb(102, 0, 255);
+            position: absolute;
+            left: 10px;
+            top: 0;
+            
+            z-index: 110;
+
+        }
+        #test2{
+            height: 200px;
+            width: 200px;background-color:red;
+            position: absolute;
+            left: 10px;
+            top: 0;
+            
+            z-index: 200;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        <div id="test"></div>
+        <div id="test1"></div>
+        <div id="test2"></div>
+    </div>
+</body>
+</html>

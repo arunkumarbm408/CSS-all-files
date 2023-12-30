@@ -1,0 +1,28 @@
+p{
+    color: blue;
+}
+#aru{
+    color: aqua;
+    background-color: rgb(250, 215, 239);
+    width: 50%;
+}
+.demo{
+    background-color: darkred;
+}
+b{
+    color: darkblue;
+    background-color: brown;
+}
+
+h2,h3,i{
+    color: purple;
+}
+#man{
+    background-color: black;
+}
+#can{
+    color: cyan;
+}
+*{
+    background-color: chocolate;
+}

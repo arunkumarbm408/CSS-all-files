@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}   
+
+#grid-container{
+    height: 900px;
+    width: 100vw;
+    background-color: aquamarine;
+    display: grid;
+    /* grid-template-columns: 150px 150px 150px 150px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: 100px 100px 100px auto;
+    grid-template-columns: 20% 20% 40% auto;
+    grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px auto 30vh auto;
+    /* row-gap: 20px;
+    column-gap: 20px; */
+    gap: 50px;
+    grid-template-areas: "header header header"
+                          "sdbr section section"
+                           "sdbr  section  section"
+                           "sdbr section  section"
+                           "ftr     ftr        ftr"
+                           "ftr      ftr       ftr";
+}
+.grid-items{
+    /* height: 100px;
+    width: 100px; */
+    background-color: rgb(81, 151, 110);
+    border: 5px double rgb(203, 22, 22);
+}
+
+#grid-item1{
+    grid-area: header;
+    /* grid-column-start: 1;
+    grid-column-end: 6;
+    padding: 20px;
+    padding-left: 850px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: yellow; */
+}
+#grid-item2{
+    grid-area: sdbr;
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url("/HTML/images/aru\ passport\ coat.jpg");
+    background-repeat: no-repeat;
+    background-size: 38vw 40vh; */
+}
+#grid-item3{
+    grid-area: section;
+    /* grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    /* justify-self: center;
+    align-self: center; */
+    /* place-self: center; */ 
+}
+
+#grid-item4{
+    grid-area: ftr;
+    /* grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    padding: 150px;
+    padding-left: 850px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: yellow; */
+}
+
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            transition-property:all ;
+            transition-duration: 10s;
+            transition-timing-function: linear;
+            transition-delay: 2s;
+
+            /* transition: all 10s linear 2s; */
+
+            /* for particular width */
+            
+            transition: width 3s linear 0.5s, height 5s linear 0.5s;
+            position: relative;
+            left: 40%;
+            top: 40vh;
+
+
+
+
+        }
+        section:hover{
+            background-color: black;
+            height: 600px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <section></section>
+</body>
+</html>
